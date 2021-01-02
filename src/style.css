@@ -23,6 +23,15 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
+h3 {
+  color: rgb(186, 186, 186);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+}
 .weather-app-wrapper {
   max-width: 652px;
   margin: 0 auto;
@@ -42,7 +51,7 @@ li:first-letter {
   height: 64px;
   width: 64px;
 }
-strong {
+.weather-temperature strong {
   color: rgb(32, 33, 36);
   bottom: -10px;
   font-size: 64px;
@@ -56,4 +65,17 @@ strong {
 }
 a {
   text-decoration: none;
+}
+.weather-forecast-img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-size-adjust: 100%;
 }
