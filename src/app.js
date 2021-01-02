@@ -32,8 +32,18 @@ function displayCurrentWeather(response) {
 }
 
 
+function handleSubmit(event) {
+   event.preventDefault();
+   let cityInputElement = document.querySelector("#city-input");
+   search(cityInputElement.value);
+}
+search("New York");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+function search(city) {
 let apiKey = "d2991882ca3e5ee6762070360098f550";
-let city = "Paris";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-console.log(apiUrl);
 axios.get(apiUrl).then(displayCurrentWeather);
+}
